@@ -1,0 +1,56 @@
+body, nb-layout, nb-layout-header, nb-layout-column{
+    background-color:#151a30;
+    
+}
+
+nb-layout-header{
+    
+    a{
+        i{
+            font-size:30px;
+            margin-right: 30px;
+            color:#8f9bb3;
+        }
+    }
+    h6{
+        font-size: 30px;
+        color:white;
+        padding-left:30px ;
+        border-left: 1px solid white;
+    }
+    nb-action{
+        position: absolute;
+        right: 50px;
+        gap:30px;
+        border: 0;
+        a{
+            padding: 5px 10px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        p{
+            font-size:20px;
+            color:white;
+        }
+    }
+    
+}
+.menusidebar.active {
+    display: none;
+}
+.menusidebar.expanded {
+    display: block;
+    
+}
+nb-layout-column{
+    display:flex;
+    padding: 0 0 0 30px !important;
+}
+app-main-content {
+    width: 100%;
+    display: block;
+}
+
+

@@ -1,0 +1,68 @@
+.menu{
+    border: 0;
+    padding: 15px 25px;
+    background-color: #151a30 ;
+    color:white;
+}
+.container{
+    margin-top: 20px;
+}
+.menu.active{
+    background-color:rgb(20, 143, 214);
+    border-radius:10px;
+}
+.column-top{
+    height:40vh;
+    display: grid;
+    grid-template-columns: 22% 43% 30%;
+    gap:20px;
+
+    .card1{
+        width: 100%;
+        text-align: center;
+        background: #242d47;
+        h1{
+            color: #1b9cfc;
+        }
+        p{color:white}
+    }
+    .card2{
+        width: 100%;
+        
+    }
+    .card3{
+        padding:20px;
+        font-size: 20px;
+        width: 100%;
+        background: #242d47;
+        color:white;
+    }
+}
+.bdb{
+    border-bottom:1px solid black;
+}
+
+
+.column-bot{
+    height: calc(100vh - 60vh - 30px);
+    margin-top:60px;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns:48% 48%;
+    gap:2%;
+    .bot-left{
+        font-size: 20px;
+        
+        color:white;
+        height:100%;
+        overflow: hidden;
+        background: #242d47;
+    }
+    .bot-right{
+        padding:20px;
+        font-size: 20px;
+        background: #242d47;
+        color:white;
+        height:100%;
+    }
+}

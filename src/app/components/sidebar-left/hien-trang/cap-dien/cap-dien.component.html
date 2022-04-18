@@ -1,0 +1,35 @@
+<div class="hatang-capdien">
+    <div class="solieu">
+        <h1>378</h1>
+        <p>Tổng chiều dài(km)</p>
+        <div class="bdb"></div>
+        <h1>4,189</h1>
+        <p>Số lượn cột điện</p>
+        <div class="bdb"></div>
+        <h1>0</h1>
+        <p>Số lượng đèn giao thông</p>
+        <div class="bdb"></div>
+        <h1>10,237</h1>
+        <p>Số lượng trạm biến áp</p>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1vOYSM5ERm_yJwMrdSGLBcZc95Rs&ehbc=2E312F" width="640" height="480"></iframe>
+    </div>
+    <div class="capdien-bieudodoc">
+        <ngx-charts-bar-vertical-stacked
+ 
+  
+            [results]="multi"
+            [gradient]="gradient"
+            [xAxis]="showXAxis"
+            [yAxis]="showYAxis"
+            [legend]="showLegend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            [animations]="animations"
+            (select)="onSelect($event)">
+        </ngx-charts-bar-vertical-stacked>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<body>
+  <nb-layout>
+    <nb-layout-header fixed>
+      <a class="tb-a" (click)="button()" href="#!">
+        <i class="fas fa-bars"></i>
+      </a>
+      <h6>Phân Tích Dữ Liệu Ngành Xây Dựng Bình Dương</h6>
+      <nb-action>
+        <a>cv</a>
+        <p>Chuyên Viên</p>
+      </nb-action>
+    </nb-layout-header>
+
+    <nb-sidebar class="menusidebar" tag="menu-sidebar">
+      <app-sidebar-left></app-sidebar-left>
+    </nb-sidebar>
+
+    <nb-layout-column>
+      <app-main-content></app-main-content>
+    </nb-layout-column>
+
+  </nb-layout>
+</body>

@@ -1,0 +1,72 @@
+<nb-action>
+    <button class="menu active " (click)="openMenu($event, '.xaydung')">Công Trình Xây Dựng</button>
+    <button class="menu" (click)="openMenu($event, '.giaothong')">Giao Thông</button>
+    <button class="menu" (click)="openMenu($event, '.trunghathe')">Hệ Thống Cấp Điện Trung Hạ Thế</button>
+    <button class="menu" (click)="openMenu($event, '.cayxanh')">Cây Xanh</button>
+    <button class="menu " (click)="openMenu($event, '.chieusang')">Chiếu Sáng</button>
+    <button class="menu  " (click)="openMenu($event, '.thoatnuoc')">Thoát Nước</button>
+    <button class="menu " (click)="openMenu($event, '.vienthong')">Viễn Thông</button>
+    <button class="menu " (click)="openMenu($event, '.dothi')">Môi Trường Đô Thị</button>
+    <button class="menu " (click)="openMenu($event, '.capnuoc')">Cấp Nước</button>
+</nb-action>
+
+<div class="container">
+    <div class="row">
+        <div class="column column-top">
+            <div class="top-left">
+                <select class="select-date" >
+                    <option value="">Chọn năm</option>
+                    <option value="2">2022</option>
+                    <option value="3">2021</option>
+                    <option value="4">2020</option>
+                </select>
+                <h1>2,684</h1>
+                <p>Tổng chiều dài (km)</p>
+                <div class="bdb"></div>
+                <h1>5,517</h1>
+                <p>Tổng diện tích (ha)</p>
+            </div>
+            <div class="top-right">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1hSJI5w-gsG-RFj5jcwFJKP_7aEU&ehbc=2E312F" width="100%" height="100%"></iframe>
+            </div>
+        </div>
+        <div class="column column-bot">
+            <div class="bot-left">
+                <ngx-charts-line-chart
+                    
+                    [legend]="legend"
+                    [showXAxisLabel]="showXAxisLabel"
+                    [showYAxisLabel]="showYAxisLabel"
+                    [xAxis]="xAxis"
+                    [yAxis]="yAxis"
+                    [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel"
+                    [timeline]="timeline"
+                    [results]="multi"
+                    (select)="onSelect($event)"
+                    (activate)="onActivate($event)"
+                    (deactivate)="onDeactivate($event)"
+                    >
+                </ngx-charts-line-chart>
+            </div>
+            <div class="bot-right">
+                <ngx-charts-line-chart
+                    
+                    [legend]="legend"
+                    [showXAxisLabel]="showXAxisLabel"
+                    [showYAxisLabel]="showYAxisLabel"
+                    [xAxis]="xAxis"
+                    [yAxis]="yAxis"
+                    [xAxisLabel]="xAxisLabel"
+                    [yAxisLabel]="yAxisLabel"
+                    [timeline]="timeline"
+                    [results]="multi"
+                    (select)="onSelect($event)"
+                    (activate)="onActivate($event)"
+                    (deactivate)="onDeactivate($event)"
+                    >
+                </ngx-charts-line-chart>
+            </div>
+        </div>
+    </div>
+</div>

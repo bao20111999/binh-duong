@@ -1,0 +1,55 @@
+
+
+    <button class="menu active " (click)="openMenu($event, '.xaydung')">Công Trình Xây Dựng</button>
+    <button class="menu" (click)="openMenu($event, '.giaothong')">Giao Thông</button>
+    <button class="menu" (click)="openMenu($event, '.trunghathe')">Hệ Thống Cấp Điện Trung Hạ Thế</button>
+    <button class="menu" (click)="openMenu($event, '.cayxanh')">Cây Xanh</button>
+    <button class="menu " (click)="openMenu($event, '.chieusang')">Chiếu Sáng</button>
+    <button class="menu  " (click)="openMenu($event, '.thoatnuoc')">Thoát Nước</button>
+    <button class="menu " (click)="openMenu($event, '.vienthong')">Viễn Thông</button>
+    <button class="menu " (click)="openMenu($event, '.dothi')">Môi Trường Đô Thị</button>
+    <button class="menu " (click)="openMenu($event, '.capnuoc')">Cấp Nước</button>
+
+    <div class="container">
+        <div class="row">
+            <div class="column column-top">
+                <div class="card card1">
+                    <h1>35</h1>
+                    <p>Công trình cao tầng</p>
+                    <div class="bdb"></div>
+                    <h1>0</h1>
+                    <p>Công trình ngầm</p>
+                    <div class="bdb"></div>
+                    <h1>3</h1>
+                    <p>Công trình xây dựng</p>
+                </div>
+                <div class="card card2">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1Zg2g0KxAcJcrW3dneIoU88Z9w-M&ehbc=2E312F" width="100%" height="100%"></iframe>
+                </div>
+                <div class="card card3">
+                    Phân loại công trình xây dựng
+                </div>
+            </div>
+            <div class="column column-bot">
+                <div class="bot-left">
+                    <nb-action>trạng thái công trình cao tầng</nb-action>
+                    <ngx-charts-pie-chart
+                        
+                        [results]="single"
+                        [gradient]="gradient"
+                        [legend]="showLegend"
+                        
+                        [labels]="showLabels"
+                        [doughnut]="isDoughnut"
+                        (select)="onSelect($event)"
+                        (activate)="onActivate($event)"
+                        (deactivate)="onDeactivate($event)"
+                        >
+                    </ngx-charts-pie-chart>
+                </div>
+                <div class="bot-right">
+                    <nb-action>Loại công trình theo đơn vị hành chính</nb-action>
+                </div>
+            </div>
+        </div>
+    </div>

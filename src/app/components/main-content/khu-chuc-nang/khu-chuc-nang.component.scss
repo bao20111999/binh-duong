@@ -1,0 +1,56 @@
+.column {
+    display: block;
+    float: left;
+    .card {
+        width: 100%;
+       
+        gap: 10px;
+    }
+    .card1 {
+        background: #242d47;
+        height: 25vh;
+        display: flex;
+        justify-content: space-evenly;
+        color:white;
+        display:grid;
+        grid-template-columns: 80%;
+        .select-name{
+            height:80%;
+            background-color: #192038 !important;
+            color:white;
+            
+        }
+    }
+    .card2 {
+        background: #242d47;
+        height: calc(75vh - 76px - 20px);
+        margin-top: 20px;
+        color:white;
+    }
+    .card3 {
+        background: #242d47;
+        height: 60vh;
+        color:white;
+        
+        }
+    }
+    .card4 {
+        background: #242d47;
+        height: calc(40vh - 76px - 20px);
+        margin-top:20px;
+        color:white;
+        overflow: hidden
+    }
+
+
+.column.column-left {
+    width: 35%;
+}
+.column.column-right {
+    width: calc(60% - 20px);
+    margin-left: 20px;
+}
+nb-action{
+    font-size: 18px;
+    padding: 20px;
+}
